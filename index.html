@@ -14,27 +14,27 @@
 
         <form action="#" class="forme">
 
-            <div>
+            <div class="input-container">
                 <label for="vn">Valor Novo</label>
                 <input type="number" id="vn" name="vn">
             </div>
 
-            <div>
-                <label>Tipo do Material</label>
-                <select id="Tipo"></select>
+            <div class="input-container">
+                <label for="tipo">Tipo do Material</label>
+                <select id="tipo" name="tipo"></select>
             </div>
 
-            <div>
+            <div class="input-container">
                 <label for="n">Vida Útil (anos)</label>
                 <input type="number" id="n" name="n">
             </div>
 
-            <button type="submit" onclick="calcular()">Calcular</button>
+            <button type="button" onclick="calcular()">Calcular</button>
         </form>
-        <p id="resultado"></p>
+        <div class="resultado-container">
+            <p id="resultado"></p>
+        </div>
     </div>
-
-
 
     <script src="./assets/js/dados.js"></script>
     <script src="./assets/js/script.js"></script>
